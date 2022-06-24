@@ -19,7 +19,7 @@ const App: FC = () => {
                 <Route path={'home'} element={<Coctailpage/>}>
                     <Route path={':idDrink'} element={<SingleCoctailPage/>}/>
                 </Route>
-                <Route path={'myCoctail'} element={<MyBarPage/>}/>
+                <Route path={'myCocktail'} element={<MyBarPage/>}/>
             </Route>
         </Routes>
     );

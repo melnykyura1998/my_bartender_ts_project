@@ -7,7 +7,7 @@ const MainLayout:FC = () => {
         <div>
             <div className={classes.navbar}>
                 <NavLink to={'home'}>Home</NavLink>
-                <NavLink to={'myCoctail'}>My bar</NavLink>
+                <NavLink to={'myCocktail'}>My bar</NavLink>
             </div>
 
             <Outlet/>
