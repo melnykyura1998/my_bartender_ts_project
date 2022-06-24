@@ -12,3 +12,14 @@ app.get('*',(req,res) => {
 })
 
 app.listen(PORT)
+
+// const  express = require('express')
+//
+//
+// const PORT = process.env.PORT || 8080
+//
+// const app = express()
+// app.use(express.static('build'))
+// app.lisen(PORT,()=>console.log(`listening on port ${PORT}`))
+
+
