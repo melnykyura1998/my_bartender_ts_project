@@ -40,7 +40,6 @@ const getByName = createAsyncThunk<IResponse, { s: string }>(
     'cocteilSlices/getByName',
     async ({s}) => {
         const {data} = await CoctailServices.getByName(s)
-        console.log(data)
         return data
     }
 );
@@ -76,7 +75,6 @@ const cocteilSlices = createSlice({
             .addCase(getByName.fulfilled, (state, action) => {
                 const {drinks} = action.payload
                 state.cocteilByQuery = drinks
-                console.log(drinks)
             })
     })
 });
