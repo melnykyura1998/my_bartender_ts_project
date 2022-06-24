@@ -3,7 +3,7 @@ import React, {FC} from 'react';
 import { useAppSelector} from "../../Hook";
 import {Cocteil} from "../cocteil/cocteil";
 import classes from "./byQuery.module.css";
-import {Loader} from "../loader/loader";
+
 
 const ByQuery: FC = () => {
 
