@@ -4,13 +4,15 @@ import classes from "./singleCoctail.module.css";
 import {useAppDispatch} from "../../Hook";
 import {coctailActions} from "../../redax";
 
+
 interface IProps {
     coctailDetail: ICoctailDetail
 }
 
 const SingleCoctail: FC<IProps> = ({coctailDetail}) => {
 
-    const {strDrinkThumb,
+    const {
+        strDrinkThumb,
         idDrink,
         strDrink,
         strCategory,
@@ -22,12 +24,15 @@ const SingleCoctail: FC<IProps> = ({coctailDetail}) => {
         strAlcoholic
     } = coctailDetail
 
-    const coctail:ICoctail = {idDrink,strDrink,strDrinkThumb}
+
+
+    const coctail: ICoctail = {idDrink, strDrink, strDrinkThumb}
 
     const dispatch = useAppDispatch();
 
     return (
         <div className={classes.wrapper}>
+
             <div>
                 <h1>{strDrink}</h1>
                 <img src={`${strDrinkThumb}`} alt={`${strDrink}`}/></div>
