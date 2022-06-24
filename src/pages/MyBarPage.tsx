@@ -13,7 +13,7 @@ const MyBarPage: FC = () => {
     return (
         <div>
             <div className={classes.wrapper}>
-                <button className={classes.btn} onClick={() => navigate('/home')}>add coctail</button>
+                <button className={classes.btn} onClick={() => navigate('/home')}>add cocktail</button>
             </div>
             <div style={{display: "flex", justifyContent: 'center', flexWrap: 'wrap'}}>
                 { myBar.map(coctail => <Cocteil coctail={coctail}
