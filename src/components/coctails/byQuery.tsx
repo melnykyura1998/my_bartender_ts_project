@@ -13,8 +13,8 @@ const ByQuery: FC = () => {
         <div>
 
             <div className={classes.wrapper}>
-                {cocteilByQuery.length>0 ? cocteilByQuery.map(cocteil => <Cocteil coctail={cocteil}
-                                                                         key={cocteil.idDrink}/>) : <Loader/>}
+                {cocteilByQuery ? cocteilByQuery.map(cocteil => <Cocteil coctail={cocteil}
+                                                                         key={cocteil.idDrink}/>) : <h1>Not found</h1>}
             </div>
         </div>
     );
