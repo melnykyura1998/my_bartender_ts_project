@@ -1,0 +1,39 @@
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: end;
+}
+.wrapper img{
+    width: 400px;
+}
+.wrapper div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.detail{
+    font-size: 20px;
+    padding: 10px;
+    background:#383838 ;
+    border-radius: 5px;
+    max-width: 500px;
+}
+.detail * {
+    margin: 10px 0;
+}
+.wrapper h1{
+    text-shadow: 1px 1px 1px black;
+}
+.btn{
+    background: #383838;
+    color: snow;
+    border-radius: 15px;
+    padding: 7px;
+    border: none;
+    margin-bottom: 50px;
+    /*width: 70px;*/
+}
+.btn:hover{
+    box-shadow: snow 0 0 2px 2px;
+}

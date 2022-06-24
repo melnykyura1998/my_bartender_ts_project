@@ -1,0 +1,20 @@
+.form{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.form input {
+    border-radius: 7px;
+    height: 22px;
+    background: none;
+}
+
+.form button{
+    background: #383838;
+    color: snow;
+    border-radius: 15px;
+    list-style: none;
+    padding: 7px;
+    border: none;
+}

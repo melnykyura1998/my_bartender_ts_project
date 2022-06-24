@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {FC} from 'react';
+import {Route, Routes, Navigate} from 'react-router-dom'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {MainLayout} from "./Layouts";
+import {Coctailpage, SingleCoctailPage} from "./pages";
+import {MyBarPage} from "./pages/MyBarPage";
+
+// "start": "react-scripts start",
+
+const App: FC = () => {
+
+
+
+    return (
+        <Routes>
+            <Route path={'/'} element={<MainLayout/>}>
+                <Route index element={<Navigate to={'home'}/>}/>
+                <Route path={'home'} element={<Coctailpage/>}>
+                    <Route path={':idDrink'} element={<SingleCoctailPage/>}/>
+                </Route>
+                <Route path={'myCoctail'} element={<MyBarPage/>}/>
+            </Route>
+        </Routes>
+    );
 }
 
-export default App;
+export {App};

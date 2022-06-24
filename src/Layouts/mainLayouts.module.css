@@ -1,0 +1,17 @@
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70px;
+    background: #383838;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.navbar a[class='active']{
+color: #e72828;
+}
+.navbar a{
+    font-size: 40px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: snow;
+}
